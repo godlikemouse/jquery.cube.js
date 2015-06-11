@@ -15,12 +15,28 @@ Create an HTML container for the cube.
 
 	<div class="cube"></div>
 
-Create a script block, initialize the plugin and execute some commands.
+In JavaScript, initialize the plugin and execute some commands.
 
-	<script language="javascript">
-		var cube = $(".cube").cube();
-		cube.execute("x (R' U R') D2 (R U' R') D2 (R U R') D2 (R U' R') D2 (R U R') D2 (R U' R') D2 R2 x'");
-	</script>
+	var cube = $(".cube").cube();
+	cube.execute("x (R' U R') D2 (R U' R') D2 (R U R') D2 (R U' R') D2 (R U R') D2 (R U' R') D2 R2 x'");
+
+## Options
+
+The following table spcifies the options available to be used in conjuction with the plugin.
+
+| Name | Description |
+| ---- | ----------- |
+| size.width | Controls the cube width in pixels. (default 150) |
+| size.height | Controls the cube height in pixels. (default 150) |
+| color | Array specifying edge colors. [ front, right, rear, left, top, bottom ] (default [ "red", "green", "orange", "blue", "yellow", "white" ] |
+| animation.delay | Specifies the animation delay in milliseconds. (default 250) |
+
+    var cube = $(".cube").cube({
+        animation: {
+            delay: 500 //half a second per turn animation
+        },
+        colors: ["red", "blue", "orange", "green", "white", "yellow"] //original rubik colors
+    });
 
 ## Community
 
