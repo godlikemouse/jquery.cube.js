@@ -28,4 +28,5 @@
 	display: block;
 	text-align: center;
 	font-size: 30px;
+    backface-visibility: hidden;
 }
