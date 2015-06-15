@@ -1,7 +1,10 @@
 .cube {
 	perspective: 1500px;
+    -webkit-perspective: 1500px;
 	transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     transform: rotateY(-30deg) rotateX(-30deg);
+    -webkit-transform: rotateY(-30deg) rotateX(-30deg);
     position: relative;
     top: 75px;
     left: 150px;
@@ -19,6 +22,7 @@
 
 .cube .cubit {
 	transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 	position: absolute;
 }
 

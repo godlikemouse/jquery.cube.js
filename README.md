@@ -9,8 +9,9 @@ An implemention of a Rubik's Cube using jQuery, CSS and plain HTML with the abil
 | Browser | Compatibility |
 | ------- | ----- |
 | Chrome | Perfect |
-| Opera | Perfect |
 | Firefox | Working though Mozilla CSS3 flickers backface visibility |
+| Opera | Perfect |
+| Safari | Perfect |
 
 ## Usage
 
