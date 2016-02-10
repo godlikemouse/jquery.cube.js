@@ -31,7 +31,7 @@ In JavaScript, initialize the plugin and execute some commands.
 
 ## Options
 
-The following table spcifies the options available to be used in conjuction with the plugin.
+The following table specifies the options available to be used in conjunction with the plugin.
 
 | Name | Description |
 | ---- | ----------- |
