@@ -34,3 +34,71 @@
 	font-size: 30px;
     backface-visibility: hidden;
 }
+
+/* mozilla doesn't properly cull
+   hidden faces, this is a work around. */
+@-moz-document url-prefix() { 
+
+    .cube .cubit .face.f6,
+    .cube .cubit .face.f4,
+    .cube .cubit .face.f3,
+
+    .cube .cubit:nth-child(4) .face.f5,
+    .cube .cubit:nth-child(5) .face.f5,
+    .cube .cubit:nth-child(6) .face.f5,
+    .cube .cubit:nth-child(7) .face.f5,
+    .cube .cubit:nth-child(8) .face.f5,
+    .cube .cubit:nth-child(9) .face.f5,
+
+    .cube .cubit:nth-child(13) .face.f5,
+    .cube .cubit:nth-child(14),
+    .cube .cubit:nth-child(15) .face.f5,
+    .cube .cubit:nth-child(16) .face.f5,
+    .cube .cubit:nth-child(17) .face.f5,
+    .cube .cubit:nth-child(18) .face.f5,
+
+    .cube .cubit:nth-child(22) .face.f5,
+    .cube .cubit:nth-child(23) .face.f5,
+    .cube .cubit:nth-child(24) .face.f5,
+    .cube .cubit:nth-child(25) .face.f5,
+    .cube .cubit:nth-child(26) .face.f5,
+    .cube .cubit:nth-child(27) .face.f5
+    {
+
+        display: none;
+    }
+
+    .cube .cubit:nth-child(7) .face.f6,
+    .cube .cubit:nth-child(8) .face.f6,
+    .cube .cubit:nth-child(9) .face.f6,
+    .cube .cubit:nth-child(16) .face.f6,
+    .cube .cubit:nth-child(17) .face.f6,
+    .cube .cubit:nth-child(18) .face.f6,
+    .cube .cubit:nth-child(25) .face.f6,
+    .cube .cubit:nth-child(26) .face.f6,
+    .cube .cubit:nth-child(27) .face.f6,
+
+    .cube .cubit:nth-child(1) .face.f4,
+    .cube .cubit:nth-child(4) .face.f4,
+    .cube .cubit:nth-child(7) .face.f4,
+    .cube .cubit:nth-child(10) .face.f4,
+    .cube .cubit:nth-child(13) .face.f4,
+    .cube .cubit:nth-child(16) .face.f4,
+    .cube .cubit:nth-child(19) .face.f4,
+    .cube .cubit:nth-child(22) .face.f4,
+    .cube .cubit:nth-child(25) .face.f4,
+
+    .cube .cubit:nth-child(1) .face.f3,
+    .cube .cubit:nth-child(2) .face.f3,
+    .cube .cubit:nth-child(3) .face.f3,
+    .cube .cubit:nth-child(4) .face.f3,
+    .cube .cubit:nth-child(5) .face.f3,
+    .cube .cubit:nth-child(6) .face.f3,
+    .cube .cubit:nth-child(7) .face.f3,
+    .cube .cubit:nth-child(8) .face.f3,
+    .cube .cubit:nth-child(9) .face.f3
+    {
+        display: block;
+    }
+    
+}
