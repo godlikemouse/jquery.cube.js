@@ -677,7 +677,7 @@ $.fn.cube = function(options){
 
 				$(from).each(function(){
 					var pos = $(this).data("pos");
-					pos.ox = -90;
+					pos.ox = 90;
 				});
 
 				break;
@@ -724,7 +724,7 @@ $.fn.cube = function(options){
 
 				$(from).each(function(){
 					var pos = $(this).data("pos");
-					pos.oz = -90;
+					pos.oz = 90;
 				});
 
 				break;
