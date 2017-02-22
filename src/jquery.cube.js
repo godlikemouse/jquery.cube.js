@@ -1231,6 +1231,11 @@ $.fn.cube = function(options){
 		paintFaces();
 	}
 
+	//method for retrieving the living options 
+	_ref.getOptions = function(){
+		return options;
+	}
+
 	createCube();
 
     _ref.data("_cube", _ref);

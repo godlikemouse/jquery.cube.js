@@ -47,6 +47,18 @@ The following table specifies the options available to be used in conjunction wi
         colors: ["red", "blue", "orange", "green", "white", "yellow"] //original rubik colors
     });
 
+## Methods
+
+getOptions()
+
+Retrieves the living set of plugin options.
+
+    var cube = $(".cube").data("_cube");
+    var options = cube.getOptions();
+
+    //change delay to 2 seconds
+    options.animation.delay = 2000;
+
 ## Community
 
 Keep track of development and community news.
